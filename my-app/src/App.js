@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowswerRouter as Router, Route, Switch} from "react-router-dom";
-import Search from './pages/search';
-import Results from './pages/results';
-import NoMatch from './pages/nomatch';
-import Navbar from "./components/navbar";
-import Header from "./components/header";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Search from './pages/Search';
+import Results from './pages/Results';
+import NoMatch from './pages/NoMatch';
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import './App.css';
 
 function App() {
