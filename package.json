@@ -23,9 +23,14 @@
   },
   "homepage": "https://github.com/Sharaeg4896/Project3#readme",
   "dependencies": {
+    "bcrypt": "^3.0.4",
     "concurrently": "^4.1.0",
+    "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "if-env": "^1.0.4",
-    "mongoose": "^5.4.17"
+    "mysql2": "^1.6.5",
+    "sequelize": "^4.43.0",
+    "sequelize-cli": "^5.4.0"
   }
 }
