@@ -17,15 +17,36 @@ class Search extends Component {
           [name]: value
         });
       };
-
-    handleFormSubmit = event => {
+    // Client request to sign up
+    handleSignupSubmit = event => {
         event.preventDefault();
-        if(this.state.username && this.state.password) {
+        var username = this.state.username;
+        var password = this.state.password;
+        console.log('grabbed on view ', username, password);
+
+        if(username && password) {
             API.createAccount({
-                username: this.state.username,
-                password: this.state.password
+                username: username,
+                password: password
             })
-            .catch(err => console.log(err))
+            .then(function() {console.log('created login credentials')} )
+            .catch(err => console.log(err));
+        }
+    }
+    // Client request to login
+    handleLoginSubmit = event => {
+        event.preventDefault();
+        var username = this.state.username;
+        var password = this.state.password;
+        console.log('login ', username, password);
+
+        if(username && password) {
+            API.verifyAccount({
+                username: username,
+                password: password
+            })
+            .then(function() {console.log('created login credentials')} )
+            .catch(err => console.log(err));
         }
     }
 
@@ -35,18 +56,20 @@ class Search extends Component {
                 <form>
                     <h3>Sign up</h3>
                     <Input
+                        value={this.state.username}
                         onChange={this.handleInputChange}
                         name="username"
                         placeholder="Username (required)"
                     />
                     <Input
+                        value={this.state.password}
                         onChange={this.handleInputChange}
                         name="password"
                         placeholder="Password (required)"
                     />
                     <FormBtn
                         // disabled={!(this.state.username && this.state.password)}
-                        onClick={this.handleFormSubmit}
+                        onClick={this.handleSignupSubmit}
                     >
                         Create Account
                     </FormBtn>
@@ -64,8 +87,8 @@ class Search extends Component {
                         placeholder="Password (required)"
                     />
                     <FormBtn
-                        disabled={!(this.state.username && this.state.password)}
-                        onClick={this.handleFormSubmit}
+                        // disabled={!(this.state.username && this.state.password)}
+                        onClick={this.handleLoginSubmit}
                     >
                         Login 
                     </FormBtn>

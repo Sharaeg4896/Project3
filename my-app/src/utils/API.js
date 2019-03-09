@@ -1,8 +1,12 @@
 import axios from "axios";
 
 export default {
-  // Gets all books
-  createAccount: function() {
-    return axios.get('/api/signup');
+  // Create Sign up credentials
+  createAccount: function(signup) {
+    return axios.post('/api/signup', signup);
+  },
+
+  verifyAccount: function(login) {
+    return axios.post('/api/login', login);
   }
 };

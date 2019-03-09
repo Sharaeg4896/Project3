@@ -2,7 +2,7 @@ const express = require('express');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 3001;
 const routes = require('./routes');
 const db = require('./models')
 
@@ -34,15 +34,16 @@ app.use(express.json());
 // Add routes for API and view
 app.use(routes);
 
+// require("./routes/apiroutes")(app)
+
 
 
 if(process.env.NODE_ENV === "production") {
-    console.log('hey');
     app.use(express.statis("client/build"));
 }
 // syncing our sequelize models and starting our express app. 
 // Start the API server
-db.sequelize.sync({force: false}).then(function() {
+db.sequelize.sync({ force: true }).then(function() {
     app.listen(PORT, function() {
         console.log('API Server now listening on ' + PORT);
     })

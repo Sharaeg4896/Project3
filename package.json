@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Sharaeg4896/Project3#readme",
   "dependencies": {
     "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
     "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
