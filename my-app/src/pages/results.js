@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Hairstyles from '../components/Hairstyles';
-import Products from "../components/Products";
+import Hairstyles from '../components/hairstyles';
+import Products from "../components/products";
 
 class Results extends Component {
     render() {

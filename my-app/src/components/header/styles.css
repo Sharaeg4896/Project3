@@ -1,0 +1,18 @@
+.headerHeader{
+    width: 100%;
+    top: 100;
+    left: 0;
+    height: 150px;
+    background-color: transparent;
+}
+
+.headerText{
+    color: #a89344;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 50px;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
