@@ -11,8 +11,13 @@ class Search extends Component {
     }
 
     handleInputChange = event => {
-        const { name, value } = event.target;
-        console.log(event.target.value);
+        let value = event.target.value;
+        const name = event.target.name;
+
+        if (name === "password") {
+            value = value.substring(0, 20);
+        }
+        
         this.setState({
           [name]: value
         });
@@ -24,15 +29,25 @@ class Search extends Component {
         var password = this.state.password;
         console.log('grabbed on view ', username, password);
 
+       if (this.state.password.length < 7) {
+           alert('Password requird length is 7 to 20 charaters long')
+       } else {
         if(username && password) {
             API.createAccount({
                 username: username,
                 password: password
             })
-            .then(function() {console.log('created login credentials')} )
+            .then(function() {console.log('created signup credentials')} )
             .catch(err => console.log(err));
         }
+       }
+
+        this.setState({
+            username: "",
+            password: ""
+        })
     }
+
     // Client request to login
     handleLoginSubmit = event => {
         event.preventDefault();
@@ -48,6 +63,11 @@ class Search extends Component {
             .then(function() {console.log('created login credentials')} )
             .catch(err => console.log(err));
         }
+
+        this.setState({
+            username: "",
+            password: ""
+        })
     }
 
     render() {
@@ -68,7 +88,7 @@ class Search extends Component {
                         placeholder="Password (required)"
                     />
                     <FormBtn
-                        // disabled={!(this.state.username && this.state.password)}
+                        disabled={!(this.state.username && this.state.password)}
                         onClick={this.handleSignupSubmit}
                     >
                         Create Account
@@ -77,17 +97,19 @@ class Search extends Component {
                 <form>
                     <h3>Login</h3>
                     <Input
+                        value={this.state.username}
                         onChange={this.handleInputChange}
                         name="username"
                         placeholder="Username (required)"
                     />
                     <Input
+                    value={this.state.password}
                         onChange={this.handleInputChange}
                         name="password"
                         placeholder="Password (required)"
                     />
                     <FormBtn
-                        // disabled={!(this.state.username && this.state.password)}
+                        disabled={!(this.state.username && this.state.password)}
                         onClick={this.handleLoginSubmit}
                     >
                         Login 
