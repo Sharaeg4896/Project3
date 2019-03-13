@@ -5,9 +5,11 @@ import "./styles.css";
 // That way we don't have to define them all individually
 function Header(props) {
   return (
-    <h1> 
-        This is the Header component.
+    <header className="headerHeader">
+    <h1 className="headerText"> 
+        Our essentials to achieve the perfect style at home.
     </h1>
+    </header>
   );
 }
 

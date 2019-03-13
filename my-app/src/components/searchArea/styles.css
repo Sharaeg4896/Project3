@@ -1,0 +1,15 @@
+.searchHeader {
+    width: 100%;
+    top: 100;
+    left: 0;
+    position: fixed;
+    background-color: #EAEAEA;
+    height: 150px;
+}
+
+.searchText{
+    color:#a89344;
+    text-align: center;
+    padding: 3%;
+    font-family: 'Poppins', sans-serif;
+}
