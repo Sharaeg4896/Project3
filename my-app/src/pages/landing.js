@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import grow from "../images/grow.jpg"
+
 
 class landing extends Component {
     render() {

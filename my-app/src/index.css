@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #231F20;
+  color: red;
 }
 
 code {
@@ -17,12 +18,7 @@ code {
     monospace;
 }
 
-.gridLook {
-  /* background-color: white;
-  width: 100%;
-  border: 20px red solid; */
 
-}
 
 .col-lg-6 {
   border: solid 2px black;

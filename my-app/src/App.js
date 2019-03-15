@@ -5,7 +5,8 @@ import Results from './pages/results';
 import NoMatch from './pages/NoMatch';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Landing from "./pages/landing"
+import Landing from "./pages/landing";
+import hairTips from "./pages/hairTips";
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component= {Landing}/>
           <Route exact path='/search' component={Search}/>
           <Route exact path='/result' component={Results}/>
+          <Route exact path='/hairTips' component={hairTips}/>
           <Route component={NoMatch}/>
         </Switch>
       </div>
