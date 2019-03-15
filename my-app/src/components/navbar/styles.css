@@ -1,29 +1,22 @@
 
 
-.navHeader {
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: transparent;
-    color:#a89344;
-    height: 56px;
-}
 
-
-.navbar{
+.navbar-header{
     display: flex;
-    height: 100%;
-    align-items: center;
+    height: 20px;
+    align-items: left;
     padding: 0 1rem;
 }
 
+.navbar-toggle {
+    background-color: white;
+}
 
 
 .logo a{
     color: #8E793E;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 70px;
     margin-left: 10px;
     margin-top: 40px;
     font-family: 'Alex Brush', cursive;
@@ -31,28 +24,24 @@
 }
 
 
-.navigation_links ul{
+.nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     font-family: 'Poppins', sans-serif;
+    align-items: center;
 }
 
-.navigation_links a{
-    color: #DAA520;
-    float: left;
-    text-align: right;
-    padding: 14px 16px;
+.nav-link{
+    color:  #8E793E;
+    text-align: left;
+    padding: 0px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
-.spacer{
-    flex: 1;
-}
-
-li a:hover{
+nav-link a:hover{
     color: #ff6500;
     margin: 0px;
 }
