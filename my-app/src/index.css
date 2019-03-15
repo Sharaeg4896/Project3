@@ -13,3 +13,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.gridLook {
+  /* background-color: white;
+  width: 100%;
+  border: 20px red solid; */
+
+}
+
+.col-lg-6 {
+  border: solid 2px black;
+  height: 400px;
+}
+
+.know{
+  background-image: url("./images/know.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: rgb(243, 190, 92);
+}
+.grow{
+  background-image: url("./images/grow.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  
+}
+.glow{
+  background-image: url("./images/glow.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
