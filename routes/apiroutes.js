@@ -47,5 +47,14 @@ module.exports = function(app) {
         
     });
 
+    // route to log out
+    app.get('/logout', (req, res) => {
+        if (req.session.user && req.cookies.user_sid) {
+            hbsContent.loggedin = false;
+            res.clearCookie('user_sid');
+            res.redirect('/');
+        }
+    });
+
     
 };
