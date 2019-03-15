@@ -88,7 +88,7 @@ module.exports = {
                 brand: 'CURLS Blueberry Bliss Curl Collection',
                 productName: 'Reparative Leave In Conditioner',
                 ingredients: 'Purified Water, Behentrimonium Methosulfate, Cetearyl Alcohol, Cetyl Alcohol, Certified Organic Blueberry Fruit Extract, Certified Organic Coconut Oil, Glycereth-26, Sorbitol, Certified Organic Aloe Barbadensis Leaf Juice, Hydrolyzed Quinoa, Silk Amino Acids, Certified Organic Chamomile Flower Extract, Fragrance, Phenoxyethanol, Caprylyl Glycol',
-                category: 'Conditoner',
+                category: 'Leave In Conditoner',
                 createdAt: new Date(),
                 updatedAt: new Date()
             },
@@ -115,7 +115,87 @@ module.exports = {
                 category: 'Oil',
                 createdAt: new Date(),
                 updatedAt: new Date()
-            }
+            },
+            {
+              brand: 'ECO Style',
+              productName: 'Black Castor & Flaxseed Oil Styling Gel',
+              ingredients: 'Water/Aqua/Eau, Carbomer, Triethanolamine, Ricinus Communis (Castor) Seed Oil, Linum usitatissimum (Linseed) Seed Oil, Hydrolyzed Wheat Protein, PVP, Glycerin, Phenoxyethanol, Polysorbate 20, Tetrasodum EDTA, Fragrance (Parfum), d-Limonene,',
+              category: 'Gel',
+              createdAt: new Date(),
+              updatedAt: new Date()
+          },{
+            brand: 'Mielle Organics',
+            productName: 'Pomegranate & Honey Curl Smoothie',
+            ingredients: 'Water (Aqua, Eau), Cocos Nucifera (Coconut ) Oil, Glycerin, Isoprpyl Myristate, Caprylic/Capric Triglyceride, Stearyl Alcohol, Polyquaternium-11, Fragrance (Parfum), Ceteareth-20, Dimethicone, Glycine Soja (Soybean) Oil, *Orbignya Oleifera (Babassu) Oil, *Mauritia Flexuosa (Buriti) Fruit Oil, *Copaiferi Officianalis (Balsam Copaiba) Resin, *Astrocaryum Murumuru Seed Butter, Panthenol, Punica Granatum (Pomegranate) Extract, Hydrolyzed Soy Protein, Honey (Mel, Miel), Propanediol, Polyquaternium-37, Carbomer, Phenoxyethanol, Propylene Glycol Dicaprate Dicaprylate, Steareth-2, Oleth-10, Aminomethyl Propaol, Benzoic Acid, Dehydroacetic Acid, PPG-1 Trideceth-6, Disodium EDTA, Limonene, Linolool, Benzyl Alcohol',
+            category: 'Styling Cream',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },{
+            brand: 'Mielle Organics',
+            productName: 'Pomegranate & Honey Curl Coil Sculpting Custard',
+            ingredients: 'WATER (AQUA, EAU), GLYCERIN, PECTIN, HYDROLYZED CORN STARCH, POLYSORBATE-20, XANTHAN GUM, HYDROXYETHYLCELLULOSE, CARRAGEENAN, FRAGRANCE (PARFUM), *ORBIGNYA OLEIFERA (BABASSU) OIL, *MAURITIA FLEXUOSA (BURITI) FRUIT OIL, *COPAIFERI OFFICINALIS (BALSAM COPAIBA) RESIN, *ASTROCARYUM MURUMURU SEED BUTTER, COCOS NUCIFERA (COCONUT) OIL, PUNICA GRANATUM (POMEGRANATE) EXTRACT, PRUNUS AMYGDALUS DULCIS (SWEET ALMOND) OIL, HONEY (MEL, MIEL), PERSEA GRATISSIMA (AVOCADO) OIL, PHENOXYETHANOL, BENZOIC ACID, ETHYLHEXYLGLYCERIN, GLYCERETH-2 COCOATE',
+            category: 'Gel',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },
+        {
+            brand: 'Mielle Organics',
+            productName: 'Pomegranate & Honey Leave-In Conditioner',
+            ingredients: 'WATER (AQUA, EAU), BEHENTRIMONIUM METHOSULFATE, CETYL ALCOHOL, BUTYLENE GLYCOL, CETYL ALCOHOL, GLYCERIN, *ORBIGNYA OLEIFERA (BABASSU) OIL, *MAURITIA FLEXUOSA (BURITI) FRUIT OIL, *COPAIFERI OFFICINALIS (BALSAM COPAIBA) RESIN, *ASTROCARYUM MURUMURU SEED BUTTER, VACCINIUM MYRTILLUS FRUIT EXTRACT, SACCHARUM OFFICINARUM (SUGAR CANE) EXTRACT, ACER SACCHARINUM (SUGAR MAPLE) EXTRACT, CITRUS AURANTIUM DULCIS (ORANGE) FRUIT EXTRACT, CITRUS Medica Limonum CITRUS MEDICA LIMONUM (LEMON) FRUIT EXTRACT, PUNICA GRANATUM (POMEGRANATE) EXTRACT, BETAINE, HEXYLENE GLYCOL, HONEY (MEL, MIEL), PYRUS MALUS (APPLE) FRUIT EXTRACT, CAMELLIA SINENSIS LEAF EXTRACT, HEXAPEPTIDE-11, CITRIC ACID, FRAGRANCE (PARFUM), PHENOXYETHANOL, BENZOIC ACID, ETHYLHEXYLGLYCERIN, GLYCERETH-2 COCOATE',
+            category: 'Conditioner',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },
+        {
+            brand: 'Mielle Organics',
+            productName: 'Pomegranate & Honey Twisting Souffle',
+            ingredients: 'WATER (AQUA, EAU), BEHENTRIMONIUM METHOSULFATE, CETEARYL ALCOHOL, ALOE BARBADENSIS LEAF JUICE (DECOLORIZED), PRUNUS AMYGDALUS DULCIS (SWEET ALMOND) OIL, OLEA EUROPAEA (OLIVE) FRUIT OIL, SESAMUM INDICUM (SESAME) SEED OIL, HELIANTHUS ANNUUS SEED OIL, POLYSORBATE-20, *ORBIGNYA OLEIFERA (BABASSU) OIL, *MAURITIA FLEXUOSA (BURITI) FRUIT OIL, *COPAIFERI OFFICINALIS (BALSAM COPAIBA) RESIN, *ASTROCARYUM MURUMURU SEED BUTTER, MACADAMIA INTEGRIFOLIA SEED OIL, GLYCERYL STEARATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, PUNICA GRANATUM (POMEGRANATE) EXTRACT, TOCOPHERYL ACETATE, FRAGRANCE (PARFUM), HONEY (MEL, MIEL), SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL, RICINUS COMMUNIS (CASTOR) SEED OIL, CETRIMONIUM CHLORIDE, PHENOXYETHANOL, BENZOIC ACID, ETHYLHEXYLGLYCERIN, GLYCERETH-2 COCOATE',
+            category: 'Styling Cream',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },
+        {
+            brand: 'Mielle Organics',
+            productName: 'Pomegranate & Honey Moisturizing and Detangling Shampoo',
+            ingredients: 'Water (Aqua, Eau), Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, Polyquaternium-7, Disodium Cocoamphodipropionate, Cocamide Mea, Glycol Stearate, Disodium Lauryl Sulfosuccinate, Fragrance, Honey, Peg-150 Distearate, Panthenol, Hydrolyzed Wheat Protein, Punica Granatum (Pomegranate) Seed Oil, Euterpe Oleracea Fruit Extract, Glycerin, Silk Protein, Organic Orbignya Oleifera (Babassu) Oil, Organic Mauritia Flexuosa (Buriti) Fruit Oil, Organic Copaiferi Officinalis (Balsam Copaiba), Organic Astrocaryum Murumuru Seed Butter, Sodium Chloride, Citric Acid, Phenoxyethanol, Benzoic Acid, Ethylhexylglycerin, Glycereth-2 Cocoate',
+            category: 'Cleanser',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },
+        {
+            brand: 'Mielle Organics',
+            productName: 'Pomegranate & Honey Moisturizing and Detangling Conditioner',
+            ingredients: 'Water (Aqua, Eau), Prunus Amygdalus Dulcis (Sweet Almond) Oil, Cyclopentasiloxane, Cetearyl Alcohol, Behentrimonium Methosulfate, Cocos Nucifera (Coconut) Oil, Stearalkonium Chloride,Fragrance, Honey, Glycerin, Euterpe Oleracea Fruit Extract, Punica Granatum (Pomegranate) Seed Oil, Organic Orbignya Oleifera (Babassu) Oil, Organic Mauritia Flexuosa (Buriti) Fruit Oil, Organic Copaiferi Officinalis (Balsam Copaiba), Organic Astrocaryum Murumuru Seed Butter, Disodium Edta, Aminomethyl Propanol, Phenoxyethanol, Benzoic Acid, Ethylhexyl Glycerin, Glycereth-2 Cocoate',
+            category: 'Conditioner',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },
+        {
+            brand: 'ECO Style',
+            productName: 'Moroccan Argan Oil Styling Gel',
+            ingredients: 'Water, Carbomer, Hydrolyzed Wheat Protein, PVP, Glycerin, Trithanolamine, Sodium Hydrxymethylglycnate, Plysorbate 20, Tetrasodim EDTA, Argan oil, Fragrance, Yellow #11',
+            category: 'Gel',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },
+        {
+            brand: 'Creme Of Nature',
+            productName: 'Strength & Shine Leave-in Conditioner',
+            ingredients: 'Aqua (Water) (Eau), Cyclopentasiloxane, Dimethicone, Peg-12 Dimethicone, Polyquaternium-6, Disiloxane, Lactic Acid, Dimethiconol, Phenyl Trimethicone, Argania Spinosa Kernel Oil, Polyquaternium-16, Cocodimonium Hydroxypropyl Hydrolyzed Keratin, Cocodimonium Hydroxypropyl Hydrolyzed Wheat Protein, Hydrolyzed Wheat Protein Pg-Propyl Silanetriol, Panthenol, Benzophenone-4, Parfum (Fragrance), Hydroxyisohexyl 3-Cyclohexene Carboxaldehyde, Imidazolidinyl Urea, Ci 19140 (Yellow 5), Ci 14700 (Red 4)',
+            category: 'Conditioner',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        },
+        {
+            brand: 'DevaCurl',
+            productName: 'SuperCream Coconut Curl Styler',
+            ingredients: 'Water (Aqua, Eau), Cetearyl Alcohol, Cocos Nucifera (Coconut) Oil, Glycerin, Hydroxpropyl Starch Phosphate, Cetrimonium Chloride, Behentrimonium Chloride, PPG-3 Benzyl Ether Myristate, Ethyl Macadamiate, Laureth-4, Hydrolyzed Jojoba Protein, Panthenol, Rosmarinus Officinalis (Rosemary) Extract, Chamomilla Recutita (Matricaria) Extract, Humulus Lupulus (Hops) Extract, Melissa Officinalis Extract, Cymbopogon Schoenanthus Extract, Achillea Millefolium Extract, Lauryldimonium Hydroxypropyl Hydrolyzed Wheat Protein, Lauryldimonium Hydroxypropyl Wheat Starch, Propylene Glycol, Ceteareth-20, Disodium EDTA, Aminomethyl Propanol, Diazolidinyl Urea, Iodopropynyl Butylcarbamate, Fragrance (Parfum)',
+            category: 'Styling Cream',
+            createdAt: new Date(),
+            updatedAt: new Date()
+        }
+    
+
         ], {});
     },
 
