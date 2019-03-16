@@ -9,9 +9,9 @@ function Navbar() {
     return (
       <header className="navHeader">
       <img
-        src="../../images/logo2"
-        width="30"
-        height="30"
+        src={require("../../images/logo.jpg")}
+        width="125"
+        height="125"
         alt="logo"
       />
       <ul class="nav justify-content-end">
