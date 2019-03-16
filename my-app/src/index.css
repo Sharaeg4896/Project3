@@ -1,5 +1,4 @@
-
-
+/*this index is for the global body*/
 
 body {
   margin: 0;
@@ -9,39 +8,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #231F20;
-  color: red;
+  background-color: black;
+  color: #a89344;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 20%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
 
+p{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
 
 .col-lg-6 {
-  border: solid 2px black;
+  background-color: #231F20;
   height: 400px;
+  margin-top: 40px
 }
 
 .know{
   background-image: url("./images/know.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center right;
   background-size: contain;
-  background-color: rgb(243, 190, 92);
+  background-color: #ffcc66;
+  box-shadow: 0 0 1px 1px black inset;
 }
+
+
 .grow{
   background-image: url("./images/grow.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center left;
   background-size: contain;
   
 }
 .glow{
   background-image: url("./images/glow.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center right;
   background-size: contain;
+  background-color: #c16802
 }

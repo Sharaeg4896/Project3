@@ -1,28 +1,11 @@
-.jumbotron{
-    background-color: #423F36;
-    margin-top: 50px;
-    min-width: 100px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    /*positon fixed to be used after other components are styled*/
-    position: center;
-}
 
-/* .headerHeader{
-    width: 100%;
-    top: 100;
-    left: 0;
-    height: 150px;
-    background-color: transparent;
-} */
 
 .headerText{
-    color: #a89344;
+    color: white;
     text-decoration: none;
     font-size: 40px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 2%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -34,15 +17,27 @@ p {
     text-align: center;
     color: white;
     font-style: italic;
-    line-height: 5%;
 }
 
 h2{
-    color: #a89344;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     margin-left: 10px;
     margin-top: 10px;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 40%;
+}
+
+
+h1{
+    color: #8E793E;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 40px;
     padding: 2%;
     text-align: center;
     font-family: 'Poppins', sans-serif;

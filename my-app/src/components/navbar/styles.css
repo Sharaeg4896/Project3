@@ -1,24 +1,19 @@
-
-
+/*this css is for the navbar*/
 
 .navbar-header{
     display: flex;
-    height: 20px;
+    height: 10px;
     align-items: left;
     padding: 0 1rem;
 }
 
-.navbar-toggle {
-    background-color: white;
-}
 
 
 .logo a{
     color: #8E793E;
     text-decoration: none;
-    font-size: 70px;
+    font-size: 30;
     margin-left: 10px;
-    margin-top: 40px;
     font-family: 'Alex Brush', cursive;
     padding-top: 20px;
 }
@@ -41,7 +36,15 @@
     font-size: 15px;
 }
 
-nav-link a:hover{
-    color: #ff6500;
-    margin: 0px;
-}
+i {
+    border: solid #8E793E;;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }

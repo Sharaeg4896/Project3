@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SearchArea from "../components/SearchArea";
+import SearchArea from "../components/searchArea";
 import API from "../utils/API";
 import { Input, FormBtn } from "../components/Form";
 
