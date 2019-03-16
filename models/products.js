@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Products = sequelize.define("products", {
+    var Products = sequelize.define("Products", {
         brand: {
             type: DataTypes.STRING,
             allowNull: true
@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: true
         },
         ingredients: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true
         },
         category: {

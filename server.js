@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 
 // Routes 
 require("./routes/apiroutes")(app)
-require("./routes/index");
+require("./routes/index.js")(app);
 
 
 if(process.env.NODE_ENV === "production") {
