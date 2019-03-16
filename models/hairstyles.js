@@ -1,11 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
-    var Hairstyles = sequelize.define("hairstyles", {
+    var Hairstyles = sequelize.define("Hairstyles", {
         hairstyle: {
             type: DataTypes.STRING,
             allowNull: true
         },
         products: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true
         },
         youtuberName: {
