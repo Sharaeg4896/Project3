@@ -2,6 +2,8 @@ var db = require("../models");
 var bcrypt = require('bcrypt');
 
 
+
+
 module.exports = function(app) {
 
     app.route('/api/signup')
@@ -18,6 +20,7 @@ module.exports = function(app) {
             password: req.body.password
         }).then(user => {
             req.session.user = user.dataValues;
+           
     
         })
         .catch(error => {
@@ -38,7 +41,8 @@ module.exports = function(app) {
             } else if (user.validPassword(password)) {
                 console.log('WORKING!')
                 req.session.user = user.dataValues;
-               
+                res.json({})
+                
             } else {
                 console.log('Password is incorrect');
             }
@@ -50,7 +54,7 @@ module.exports = function(app) {
     // route to log out
     app.get('/logout', (req, res) => {
         if (req.session.user && req.cookies.user_sid) {
-            hbsContent.loggedin = false;
+            
             res.clearCookie('user_sid');
             res.redirect('/');
         }

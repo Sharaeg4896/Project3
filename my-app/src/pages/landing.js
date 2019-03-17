@@ -9,8 +9,8 @@ class landing extends Component {
                     <div class="row ">
                         <div class="col-lg-6">
                         <h1 className="h1 animated fadeIn delay-2s">Know</h1>
-                            <p className="p"> A beautiful mind is as a beautiful soul</p>
-                            <p>Searching how to do cute style?</p>
+                            <p className="p"> A beautiful mind is a beautiful soul</p>
+                            <p>Searching how to do a cute style?</p>
                             <p>Or about hydrating shampoo and conditioner?</p>
                             <p>It's all right here.</p>
                             <p><i class="down"></i></p>
@@ -47,7 +47,9 @@ class landing extends Component {
                 <div class="col-lg-6 glow"></div>  
             </div>
             </div>
+           
         </div>
+       
               
     
         
