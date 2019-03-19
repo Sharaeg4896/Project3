@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 import SearchArea from "../components/searchArea";
+import LoggedIn from '../components/LoggedNav';
+import Header from "../components/header";
+
 
 
 class Search extends Component {
         render () {
             return (
-                <SearchArea/>
+               <div>
+                    <LoggedIn/>
+                    <Header/>
+                    <SearchArea/>
+               </div>
             )
         }
         

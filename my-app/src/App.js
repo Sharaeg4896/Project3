@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Search from './pages/search';
-import Results from './pages/results';
 import NoMatch from './pages/noMatch';
 import Navbar from "./components/navbar";
 import Header from "./components/header";
@@ -14,12 +13,9 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar/>
-        <Header/>
         <Switch>
           <Route exact path="/" component= {Landing}/>
           <Route exact path='/search' component={Search}/>
-          <Route exact path='/result' component={Results}/>
           <Route exact path='/hairTips' component={hairTips}/>
           <Route component={NoMatch}/>
         </Switch>

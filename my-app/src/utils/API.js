@@ -8,5 +8,8 @@ export default {
 
   verifyAccount: function(login) {
     return axios.post('/api/login', login);
+  },
+  getSavedTips: function(){
+    return axios.post('/api/hairTips')
   }
 };

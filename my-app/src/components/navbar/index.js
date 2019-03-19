@@ -29,9 +29,9 @@ class Navbar extends Component {
               username: username,
               password: password
           })
-          .then(function() {
-            window.location.href= '/search'
-          })
+          // .then(function() {
+          //   window.location.href= '/search'
+          // })
           .catch(err => console.log(err));
       }
 
@@ -40,6 +40,15 @@ class Navbar extends Component {
           passwordLogin: ""
       })
   }
+
+  // handleHairTips = event => {
+  //   console.log('clicked hairtips')
+  //   event.preventDefault();
+  //       API.getHairTips()
+  //       .then(function () {
+  //         window.location.href= '/hairTips'
+  //       })
+  // }
 
    // Client request to sign up
    handleSignupSubmit = event => {
@@ -103,8 +112,9 @@ class Navbar extends Component {
           <li className="nav-item ">
             <a className="nav-link" href="/search">New Search</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/hairTips">Hair Tips</a>
+          <li className="nav-itme">
+            <a className="nav-link" href='/hairTips'> Hair Tips
+            </a>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
@@ -127,7 +137,7 @@ class Navbar extends Component {
           </button>
         </form>
     </nav>
-    <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div className="modal-dialog" role="document">
       <div className="modal-content">
         <div className="modal-header">

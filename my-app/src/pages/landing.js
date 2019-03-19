@@ -1,9 +1,14 @@
 import React, { Component } from "react";
+import Navbar from "../components/navbar";
+import Header from "../components/header";
 
 
 class landing extends Component {
     render() {
         return (
+            <div>
+                <Navbar/>
+                <Header/>
             <div>
                 <div class="container-fluid gridLook">
                     <div class="row ">
@@ -50,6 +55,8 @@ class landing extends Component {
            
         </div>
        
+            </div>
+            
               
     
         
