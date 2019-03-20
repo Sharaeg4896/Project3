@@ -15,7 +15,12 @@ module.exports = function(sequelize, DataTypes) {
         category: {
             type: DataTypes.STRING,
             allowNull: true
+        },
+        image: {
+            type: DataTypes.STRING,
+            allowNull: true
         }
+
     });
 
     return Products;
