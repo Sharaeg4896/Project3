@@ -59,7 +59,7 @@ class Navbar extends Component {
     console.log('grabbed on view ', username, password);
 
    if (this.state.passwordSignup.length < 7) {
-       alert('Password requird length is 7 to 20 charaters long')
+       alert('Password must contain 7 to 20 characters')
    } else {
     if(username && password) {
         API.createAccount({
@@ -149,7 +149,7 @@ class Navbar extends Component {
     <div className="modal-dialog" role="document">
       <div className="modal-content">
         <div className="modal-header">
-          <h5 className="modal-title" id="exampleModalLabel">Create your accout</h5>
+          <h5 className="modal-title" id="exampleModalLabel">Create your account</h5>
           <button type="button" className="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
