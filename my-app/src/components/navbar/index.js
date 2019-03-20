@@ -183,20 +183,4 @@ class Navbar extends Component {
 } 
 
 export default Navbar;
-      // <nav classNameName="navHeader">
-      //   <img
-      //     src={require("../../images/logo.jpg")}
-      //     width="125"
-      //     height="125"
-      //     alt="logo"
-      //   />
-      //   <ul class="nav justify-content-end">
-      //     <li class="nav-item">
-      //       <a class="nav-link active" href="/hairTips">Hair Tips</a>    
-      //     </li>
-      //     <li class="nav-item">
-      //       <a class="nav-link active" href="/hairTips">Hair Tips</a>    
-      //     </li>
-      //   </ul>
-      // </nav>
      
