@@ -19,7 +19,7 @@ function Hairstyles(props)  {
           </div>
         </div>
         <div className="col-md-6 video">
-        <iframe width="540" height="315" title="style" src="https://www.youtube.com/embed/uYXgMR1Ouks" frameborder="0" allowfullscreen></iframe>
+        <iframe width="540" height="315" title="style" src={`https://www.youtube.com/embed/${props.youtubeURL}`} frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
