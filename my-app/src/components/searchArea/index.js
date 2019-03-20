@@ -3,8 +3,8 @@ import React, { Component } from "react";
 // import Select from 'react-select';
 import { withRouter } from 'react-router-dom'
 // import Results from '../../pages/results.js';
-import Products from '../Products';
-import Hairstyles from '../Hairstyles';
+import Products from '../products';
+import Hairstyles from '../hairstyles';
 import './styles.css';
 
 

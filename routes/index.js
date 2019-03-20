@@ -18,7 +18,10 @@ module.exports = function(app) {
                 hairstyle: req.params.hairstyle
         }
         })
-        .then(dbModel => res.json(dbModel))
+        .then(dbModel => {
+            console.log(dbModel);
+            res.json(dbModel)
+        })
         .catch(err => res.status(422).json(err));
     });
     
@@ -49,7 +52,10 @@ module.exports = function(app) {
                 category: req.params.category
         }
         })
-        .then(dbModel => res.json(dbModel))
+        .then(dbModel => {
+            console.log(dbModel);
+            res.json(dbModel);
+        })
         .catch(err => res.status(422).json(err));
     });
     

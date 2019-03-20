@@ -5,10 +5,12 @@ img {
 
 .navbar {
     background-color: rgb(194, 131, 72);
+    
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
+    
 }
 .navbar-light .navbar-nav .nav-link:hover {
     color: yellow;
@@ -19,6 +21,7 @@ img {
     border: solid black 2px;
     padding: 10px;
     margin: 5px;
+    
 }
 
 .btn:hover {

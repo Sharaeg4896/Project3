@@ -108,7 +108,7 @@ class Navbar extends Component {
             alt="logo"
           />
         </a>
-        <ul className="navbar-nav mr-auto">
+        {/* <ul className="navbar-nav mr-auto">
           <li className="nav-item ">
             <a className="nav-link" href="/search">New Search</a>
           </li>
@@ -116,7 +116,7 @@ class Navbar extends Component {
             <a className="nav-link" href='/hairTips'> Hair Tips
             </a>
           </li>
-        </ul>
+        </ul> */}
         <form className="form-inline my-2 my-lg-0">
           <input 
             className="form-control mr-sm-2" 
