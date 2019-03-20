@@ -89,12 +89,12 @@ class SearchType extends Component {
               <div className="form-group">
                 <label for="disabledSelect">Choose Your Hairstyle</label>
                 <select value={this.state.valueHair} onChange={this.handleChange} className="browser-default custom-select">
-                  <option value="Twistout">Twistout</option>
-                  <option value="Braidout">Braidout</option>
                   <option value="Bantu Knots">Bantu Knots</option>
-                  <option value="Wash N Go">Wash N Go</option>
+                  <option value="Braidout">Braidout</option>
                   <option value="Flexi Rods">Flexi Rods</option>
                   <option value="Silk Press">Silk Press</option>
+                  <option value="Twistout">Twistout</option>
+                  <option value="Wash and Go">Wash and Go</option>
                 </select>
                 <button className="btn btn-hairstyle">Submit</button>
               </div>
@@ -110,7 +110,7 @@ class SearchType extends Component {
                   <option value="Conditioner">Conditioner</option>
                   <option value="Moisturizer">Moisturizer</option>
                   <option value="Styling Cream">Styling Cream</option>
-                  <option value="Gels">Gels</option>
+                  <option value="Gel">Gel</option>
                   <option value="Oil">Oils</option>
                 </select>
                 <button type="submit" className="btn btn-product">Submit</button>
