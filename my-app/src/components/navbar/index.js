@@ -99,44 +99,52 @@ class Navbar extends Component {
     render () {
       return (
         <div>
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="/">
-          <img
-            // src={require("../../images/logo.jpg")}
-            width="125"
-            height="125"
-            alt="logo"
-          />
-        </a>
-        {/* <ul className="navbar-nav mr-auto">
-          <li className="nav-item ">
-            <a className="nav-link" href="/search">New Search</a>
-          </li>
-          <li className="nav-itme">
-            <a className="nav-link" href='/hairTips'> Hair Tips
-            </a>
-          </li>
-        </ul> */}
-        <form className="form-inline my-2 my-lg-0">
-          <input 
+      <nav className="navbar navbar-expand-lg navbar-light justify-content-center">
+        <div className="container col-lg-6 navbar-inline">
+          <a className="navbar-brand" href="/">Know. Grow. Glow.
+          {/*<img
+              src={require(""")
+              width="50"
+              height="50"
+              alt=""
+          />*/}
+          </a>
+        </div> 
+          {/* <ul className="navbar-nav mr-auto">
+            <li className="nav-item ">
+              <a className="nav-link" href="/search">New Search</a>
+            </li>
+            <li className="nav-itme">
+              <a className="nav-link" href='/hairTips'> Hair Tips
+              </a>
+            </li>
+          </ul> */}
+        <div className="container col-lg-6 form-inline navbar-right justify-content-end">  
+          <form className="form-inline my-2 my-lg-0">
+            <input 
+              className="form-control mr-sm-2" 
+              placeholder="Username" 
+              name="usernameLogin"  
+              value={this.state.usernameLogin}
+              onChange={this.handleInputChange}>
+              </input>
+            <input 
             className="form-control mr-sm-2" 
-            placeholder="Username" 
-            name="usernameLogin"  
-            value={this.state.usernameLogin}
+            placeholder="Password" 
+            name="passwordLogin" 
+            value={this.state.passwordLogin}
             onChange={this.handleInputChange}>
             </input>
-          <input 
-          className="form-control mr-sm-2" 
-          placeholder="Password" 
-          name="passwordLogin" 
-          value={this.state.passwordLogin}
-          onChange={this.handleInputChange}>
-          </input>
-          <button className="btn" type="submit"onClick={this.handleLoginSubmit}>Log in</button> 
-          <button className="btn" type="button" data-toggle="modal" data-target="#exampleModal"  >Sign up
-          </button>
-        </form>
+            <button className="btn" type="submit"onClick={this.handleLoginSubmit}>Log in</button> 
+            <button className="btn" type="button" data-toggle="modal" data-target="#exampleModal"  >Sign up
+            </button>
+          </form>
+        </div>  
     </nav>
+
+  
+
+
     <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div className="modal-dialog" role="document">
       <div className="modal-content">
