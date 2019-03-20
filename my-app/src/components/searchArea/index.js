@@ -132,6 +132,7 @@ class SearchType extends Component {
                       productName={product.productName}
                       ingredients={product.ingredients}
                       category={product.category}
+                      image={product.image}
                       />
                     );
                   }
