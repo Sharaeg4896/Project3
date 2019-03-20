@@ -89,7 +89,6 @@ class SearchType extends Component {
               <div className="form-group">
                 <label for="disabledSelect">Choose Your Hairstyle</label>
                 <select value={this.state.valueHair} onChange={this.handleChange} className="browser-default custom-select">
-                  <option>Stylin' N Profilin'</option>
                   <option value="Twistout">Twistout</option>
                   <option value="Braidout">Braidout</option>
                   <option value="Bantu Knots">Bantu Knots</option>
@@ -107,7 +106,6 @@ class SearchType extends Component {
               <div className="form-group">
                 <label for="disabledSelect">Choose Your Product</label>
                 <select value={this.state.valueProduct} onChange={this.handleChangeProduct} className="browser-default custom-select">
-                  <option>You got it Glowin' on!</option>
                   <option value="Cleanser">Cleanser</option>
                   <option value="Conditioner">Conditioner</option>
                   <option value="Moisturizer">Moisturizer</option>
