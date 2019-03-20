@@ -12,7 +12,7 @@ module.exports = {
         updatedAt: new Date()
       }, {  
         hairstyle: 'Twistout',
-        products: 'CURLS Blueberry Bliss Reparative Hair Wash, CURLS Blueberry Bliss Reparative Hair Mask, CURLS Blueberry Bliss Reparative Leave In Conditioner, CURLS Blueberry Bliss Twist N Shout Cream, CURLS Blueberry Bliss Curl Control Paste',
+        products: 'CURLS Blueberry Bliss Reparative Hair Wash, CURLS Blueberry Bliss Reparative Hair Mask, CURLS Blueberry Bliss Reparative Leave In Conditioner, CURLS Blueberry Bliss Twist-N-Shout Cream, CURLS Blueberry Bliss Curl Control Paste',
         youtuberName: 'NaturalNeiicey',
         youtubeURL: 'https://www.youtube.com/watch?v=tPGiPucEsW0',
         createdAt: new Date(),
@@ -52,9 +52,49 @@ module.exports = {
       },
       {  
         hairstyle: 'Bantu Knots',
-        products: 'ECO Style Moroccan Argan Oil Styling Gel, Creme Of Nature Strength & Shine Leave-in Conditioner',
-        youtuberName: 'Bella Mecia',
-        youtubeURL: 'https://www.youtube.com/watch?v=fFtt3Y9-cBY',
+        products: 'Mane Choice Do It Fro The Culture Magnificent Mask, Mane Choice Do It Fro The Culture Accomplished Leave In, Mane Choice Do It Fro The Culture Bold Buttery Gel, Mane Choice Do It Fro The Culture Sophisticated Sheen Spray',
+        youtuberName: 'Daye La Soul',
+        youtubeURL: 'https://www.youtube.com/watch?v=1nQnpdjo2DU',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {  
+        hairstyle: 'Bantu Knots',
+        products: 'Karens Body Beautiful Super Duper Hydrating Hair Cream, Organic Jojoba Oil',
+        youtuberName: 'Samirah Gilli',
+        youtubeURL: 'https://www.youtube.com/watch?v=asIr9rU5z34',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {  
+        hairstyle: 'Silk Press',
+        products: 'Its a 10 Miracle Silk Leave in Conditioner, Macadamia Healing Oil Spray, One n Only Argan Oil, 24 Hour Edge Control',
+        youtuberName: 'Danni Jadore',
+        youtubeURL: 'https://www.youtube.com/watch?v=paOptxzBRnI&t=476s',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {  
+        hairstyle: 'Silk Press',
+        products: 'Design Essentials Oat Protein & Henna Deep Cleansing Shampoo, Design Essentials Almond & Avocado Moisturizing & Detangling Sulfate-Free Shampoo, Bamboo & Silk HCO Leave In Conditioner',
+        youtuberName: 'Tierra J Beauty',
+        youtubeURL: 'https://www.youtube.com/watch?v=7V8fM1NQ7WE',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {  
+        hairstyle: 'Flexi Rods',
+        products: 'Mielle Organics Detangling Co-wash, Mielle Organics Avocado Moisturizing Hair Milk',
+        youtuberName: 'JasColoredCurls',
+        youtubeURL: 'https://www.youtube.com/watch?v=TTgjdNdQ2Oo',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {  
+        hairstyle: 'Flexi Rods',
+        products: 'Shea Moisture Coconut & Hibiscus Frizz-free Curl Mousse, CURLS Blueberry Bliss Twist-N-Shout Cream',
+        youtuberName: 'NaturallyChea',
+        youtubeURL: 'https://www.youtube.com/watch?v=RlsyoEEchU0&t=20s',
         createdAt: new Date(),
         updatedAt: new Date()
       }
