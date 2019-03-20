@@ -1,11 +1,37 @@
 var db = require("../models");
 var bcrypt = require('bcrypt');
 var scrape = require('../my-app/src/utils/scrape')
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+
+
 
 
 
 
 module.exports = function(app) {
+
+    // Commented this out for login purposes
+app.use(cookieParser());
+app.use(session({
+    key: 'user_sid',
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        expires: 6000
+    }
+}));
+
+// if browser=alive but server=dead.. clears cookie info in browser
+app.use((req, res, next) => {
+    if (req.cookies.user_sid && !req.session.user){
+        res.clearCookie('user_sid')
+    }
+    next();
+    
+});
+    
 
     app.route('/api/signup')
     .post((req, res) => {

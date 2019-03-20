@@ -6,7 +6,7 @@ function loggedIn () {
         <nav className="navbar navbar-expand-lg navbar-light">
           <a className="navbar-brand" href="/">
             <img
-              src={require("../../images/logo.jpg")}
+              // src={require("../../images/logo2")}
               width="125"
               height="125"
               alt="logo"

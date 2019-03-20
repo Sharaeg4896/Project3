@@ -29,9 +29,9 @@ class Navbar extends Component {
               username: username,
               password: password
           })
-          // .then(function() {
-          //   window.location.href= '/search'
-          // })
+          .then(function() {
+            window.location.href= '/search'
+          })
           .catch(err => console.log(err));
       }
 
@@ -102,7 +102,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="/">
           <img
-            src={require("../../images/logo.jpg")}
+            // src={require("../../images/logo.jpg")}
             width="125"
             height="125"
             alt="logo"

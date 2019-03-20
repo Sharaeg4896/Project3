@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Search from './pages/search';
 import NoMatch from './pages/noMatch';
-import Navbar from "./components/navbar";
-import Header from "./components/header";
 import Landing from "./pages/landing";
 import hairTips from "./pages/hairTips";
 import Footer from "./components/footer"
