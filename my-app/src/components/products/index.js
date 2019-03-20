@@ -19,8 +19,8 @@ function Products(props)  {
               <h6 className="card-text">{props.description}</h6>
             </div>
           </div>
-          <div className="col-md-4 video">
-            <img src='https://via.placeholder.com/400' alt='placeholder'></img>
+          <div className="col-md-4">
+            <img src={require(`../../images/HairImages/${props.image}`)} alt='placeholder'></img>
           </div>
         </div>
       </div>
