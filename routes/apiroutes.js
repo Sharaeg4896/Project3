@@ -9,6 +9,7 @@ var session = require('express-session');
 
 
 
+
 module.exports = function(app) {
 
     // Commented this out for login purposes
@@ -78,51 +79,36 @@ app.use((req, res, next) => {
         
     });
 
-    // route to log out
-    app.get('/logout', (req, res) => {
-        if (req.session.user && req.cookies.user_sid) {
-            
-            res.clearCookie('user_sid');
-            res.redirect('/');
-        }
-    });
 
     app.route('/api/hairTips')
-        .post((req, res) => {
-            return scrape()
-            .then((tips) => {
-                 for (var i = 0; i < tips.length; i++) {
-                    db.HairTips.create(tips[i])
-                }
-                
+        .get((req, res) => {
+            // This was used to scrape the tip data. 
+            // return scrape()
+            // .then((tips) => {
+            //      for (var i = 0; i < tips.length; i++) {
+            //         db.HairTips.create(tips[i])
+            //     }
         
-            })
-            .then(() => {
-                console.log('DONE???????????????????????????')
-                db.HairTips.findOne()
-                .then(function(found) {
-                    console.log('length', found.length)
-                    console.log('found', found)
-                    res.json(found)
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            // })
+            // .catch((err) => {
+            //     console.log('err: ', err);
+            //     res.json(err)
+            // })
+           
+            // Code to find all hairtips in db
+            db.HairTips.findAll()
+            .then(function(found) {
+                console.log('length', found.length)
+                console.log('found', found)
+                res.json(found)
             })
             .catch((err) => {
-                console.log('err: ', err);
-                res.json(err)
+                console.log(err);
             })
+           
     })
     
 
     
 };
 
-// function to get tips from DB
-db.HairTips.find()
-    .then((tips) => {
-        console.log(tips)
-        res.json(tips)
-    })
-    .catch(err => {res.json(err)})

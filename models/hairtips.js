@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     var HairTips = sequelize.define("HairTips", {
         tips: {
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
             unique: true,
 
             
@@ -11,6 +11,10 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.TEXT,
             allowNull: true,
             
+        },
+        image: {
+            type: DataTypes.STRING,
+            allowNull: true
         }
     });
     

@@ -102,7 +102,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="/">
           <img
-            // src={require("../../images/logo.jpg")}
+            src={require("../../images/logo.png")}
             width="125"
             height="125"
             alt="logo"
@@ -170,7 +170,7 @@ class Navbar extends Component {
             onChange={this.handleInputChange}>
             </input>
           </div>
-          <button type="submit" className="btn" onClick={this.handleSignupSubmit}>Submit</button>
+          <button type="submit" className="btn" data-toggle="modal" data-target="#exampleModal" onClick={this.handleSignupSubmit}>Submit</button>
         </form>
         </div>
       </div>

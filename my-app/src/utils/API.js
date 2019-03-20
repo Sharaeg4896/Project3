@@ -10,6 +10,6 @@ export default {
     return axios.post('/api/login', login);
   },
   getSavedTips: function(){
-    return axios.post('/api/hairTips')
+    return axios.get('/api/hairTips')
   }
 };

@@ -16,8 +16,10 @@ class hairTips extends Component {
 
   getTips = () => {
     API.getSavedTips()
-      .then(res => 
-        this.setState({ tips: res.data}))
+      .then(res => {
+        console.log('res', res.data)
+        this.setState({ tips: res.data})
+      })
       .catch(err => {
         console.log(err)
       })
@@ -28,10 +30,14 @@ class hairTips extends Component {
         <div>
           <LoggedIn/>
           <Header/>
+          <h3>Hair Tips</h3>
+          <h4>We all love natural hair, but it  can be overwhelming and tricky. We’ve come up with these 30 natural hair tips to help you with your hair journey.</h4>
           {this.state.tips.map(tip => (
             <Cards
-            tip={tip.tip}
+            tips={tip.tips}
             summary={tip.summary}
+            image={tip.image}
+            
           />
 
           ))}

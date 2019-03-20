@@ -23,7 +23,6 @@ var scrape = function() {
         .find("p")
         .text()
         .trim();
-       
 
 
         var hairCareTips = {

@@ -43,3 +43,8 @@ h1{
     font-family: 'Poppins', sans-serif;
     line-height: 40%;
 }
+
+.card-text {
+    color: red;
+    text-align: left;
+  }

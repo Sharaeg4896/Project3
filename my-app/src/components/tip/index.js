@@ -1,15 +1,17 @@
 import React from "react";
 
-function cards({tip, summary}) {
+function cards({tips, summary, image}) {
     return (
         <div>
-            <h3>Hair Tips</h3>
+            
             <div class="card">
                 <div class="card-header">
-                    {tip}
+                    {tips}
                 </div>
                 <div class="card-body">
                     <p class="card-text">{summary}</p>
+                    {image ? <img src={require(`../../images/tipImages/${image}`)} alt="tips"></img>: <span></span>}
+                    
                     
                 </div>
             </div>
