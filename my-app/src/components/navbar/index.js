@@ -41,14 +41,7 @@ class Navbar extends Component {
       })
   }
 
-  // handleHairTips = event => {
-  //   console.log('clicked hairtips')
-  //   event.preventDefault();
-  //       API.getHairTips()
-  //       .then(function () {
-  //         window.location.href= '/hairTips'
-  //       })
-  // }
+
 
    // Client request to sign up
    handleSignupSubmit = event => {
@@ -99,48 +92,19 @@ class Navbar extends Component {
     render () {
       return (
         <div>
-<<<<<<< HEAD
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="/">
-          <img
-            src={require("../../images/logo.png")}
-            width="125"
-            height="125"
-            alt="logo"
-          />
-        </a>
-        {/* <ul className="navbar-nav mr-auto">
-          <li className="nav-item ">
-            <a className="nav-link" href="/search">New Search</a>
-          </li>
-          <li className="nav-itme">
-            <a className="nav-link" href='/hairTips'> Hair Tips
-            </a>
-          </li>
-        </ul> */}
-        <form className="form-inline my-2 my-lg-0">
-          <input 
-=======
       <nav className="navbar navbar-expand-lg navbar-light justify-content-center">
         <div className="container col-lg-6 navbar-inline">
-          <a className="navbar-brand" href="/">Know. Grow. Glow.
-          {/*<img
-              src={require(""")
+          <a className="navbar-brand" href="/">
+          <img
+              src={require("../../images/logo.png")}
               width="50"
               height="50"
               alt=""
-          />*/}
+          />
           </a>
+      
         </div> 
-          {/* <ul className="navbar-nav mr-auto">
-            <li className="nav-item ">
-              <a className="nav-link" href="/search">New Search</a>
-            </li>
-            <li className="nav-itme">
-              <a className="nav-link" href='/hairTips'> Hair Tips
-              </a>
-            </li>
-          </ul> */}
+         
         <div className="container col-lg-6 form-inline navbar-right justify-content-end">  
           <form className="form-inline my-2 my-lg-0">
             <input 
@@ -151,7 +115,6 @@ class Navbar extends Component {
               onChange={this.handleInputChange}>
               </input>
             <input 
->>>>>>> 93649a12656c88ef9be4ca624e55541978a0c2b9
             className="form-control mr-sm-2" 
             placeholder="Password" 
             name="passwordLogin" 

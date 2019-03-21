@@ -10,7 +10,7 @@ function cards({tips, summary, image}) {
                 </div>
                 <div class="card-body">
                     <p class="card-text">{summary}</p>
-                    {image ? <img src={require(`../../images/tipImages/${image}`)} alt="tips"></img>: <span></span>}
+                    {image ? <img class="tip-image" src={require(`../../images/tipImages/${image}`)} alt="tips"></img>: <span></span>}
                     
                     
                 </div>
