@@ -20,7 +20,7 @@ function Products(props)  {
             </div>
           </div>
           <div className="col-md-4">
-            <img src={require(`../../images/HairImages/${props.image}`)} alt='placeholder'></img>
+            <img src={require(`../../images/HairImages/${props.image}`)} className="imageProduct" alt='placeholder'></img>
           </div>
         </div>
       </div>

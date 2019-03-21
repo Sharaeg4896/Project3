@@ -22,7 +22,7 @@ if(process.env.NODE_ENV === "production") {
     app.use(express.statis("client/build"));
 }
 // syncing our sequelize models and starting our express app. 
-db.sequelize.sync({ force: false }).then(function() {
+db.sequelize.sync({ force: true }).then(function() {
     app.listen(PORT, function() {
         console.log('API Server now listening on ' + PORT);
     })

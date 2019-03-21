@@ -14,8 +14,8 @@ class SearchType extends Component {
     this.state = { 
       products: [],
       hairstyles: [],
-      valueHair: '',
-      valueProduct: '' ,
+      valueHair: 'Bantu Knots',
+      valueProduct: 'Cleanser' ,
       data: []
     };
     
